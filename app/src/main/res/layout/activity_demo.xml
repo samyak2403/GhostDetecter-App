@@ -1,0 +1,156 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_light"
+        android:elevation="4dp"
+
+        android:paddingVertical="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Magnetic Field Meter"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- Magnetic Field Reading Display -->
+    <TextView
+        android:id="@+id/reading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reading Magnetic Field..."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <!-- SpeedView for Meter -->
+
+    <!-- Bulb Indicators -->
+
+    <com.github.anastr.speedviewlib.SpeedView
+        android:id="@+id/speedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginTop="16dp"
+
+        app:sv_textColor="#FFFFFF"
+        app:sv_speedTextColor="@color/white"
+        app:sv_unitTextColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reading_text"
+        app:sv_indicator="LineIndicator"
+        app:sv_unit="µT"
+        app:sv_unitTextSize="14sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bulb_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speedView">
+
+        <!-- Bulbs - Dynamically Adjust in Grid -->
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rowCount="1"
+            app:useDefaultMargins="true">
+
+            <!-- Repeated Bulb Elements -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulb1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulb2"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulb3"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulb4"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulb5"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulb6"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp" />
+        </androidx.gridlayout.widget.GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bannerLayout"
+        android:orientation="horizontal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
