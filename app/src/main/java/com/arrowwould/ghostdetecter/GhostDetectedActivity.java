@@ -83,8 +83,8 @@ public class GhostDetectedActivity extends AppCompatActivity implements SensorEv
         if (item.getItemId() == android.R.id.home) {
             // Handle the back arrow click
             Intent intent = new Intent(GhostDetectedActivity.this, MainActivity.class);
-            adHelper.showInterstitialAd();
             startActivity(intent);
+            adHelper.showInterstitialAd();
             return true;
         }
         return super.onOptionsItemSelected(item);

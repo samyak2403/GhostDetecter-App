@@ -56,20 +56,22 @@ public class SensorCheckActivity extends AppCompatActivity {
                 errorMessage.setVisibility(View.VISIBLE);
                 errorMessage.setText("Magnetometer Sensor not Found.\nThis app cannot function without it.");
                 continueButton.setText("Continue Anyway");
+
             } else {
                 // Sensor found
                 errorMessage.setVisibility(View.VISIBLE);
                 errorMessage.setText("Magnetometer Sensor Detected!");
                 continueButton.setText("Proceed");
+
             }
 
             // Handle button click
             continueButton.setOnClickListener(v -> {
                 // Navigate to MainActivity
                 Intent intent = new Intent(SensorCheckActivity.this, MainActivity.class);
-                adHelper.showInterstitialAd();
 
                 startActivity(intent);
+                adHelper.showInterstitialAd();
                 finish();
             });
         }, 2000); // Simulated delay

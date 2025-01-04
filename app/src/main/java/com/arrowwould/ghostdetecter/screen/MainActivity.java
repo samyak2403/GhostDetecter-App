@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
     private void onGhostButtonClick(View view) {
 
         intent = new Intent(this, GhostDetectedActivity.class);
-        adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
         startActivity(intent);
+        adHelper.showCounterInterstitialAd(0); // Show ad every 5 clicks
         finish();
 
 
@@ -65,23 +65,28 @@ public class MainActivity extends AppCompatActivity {
     private void onMagneticSensorButtonClick(View view) {
 
         intent = new Intent(this, SensorCheckActivity.class);
-        adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
+
         startActivity(intent);
+        adHelper.showInterstitialAd();
 
     }
 
 
     private void onDemoButtonClick(View view) {
         intent = new Intent(this, DemoActivity.class);
-        adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
+
         startActivity(intent);
+        adHelper.showInterstitialAd();
+        finish();
 
     }
 
     private void onAboutButtonClick(View view) {
 
         intent = new Intent(this, AboutActivity.class);
-        adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
+
         startActivity(intent);
+        adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
+
     }
 }
