@@ -1,4 +1,4 @@
-package com.samyak2403.ghostdetecter;
+package com.arrowwould.ghostdetecter;
 
 import android.content.Context;
 

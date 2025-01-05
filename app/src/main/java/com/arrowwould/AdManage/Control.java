@@ -1,4 +1,4 @@
-package com.samyak2403.AdManage;
+package com.arrowwould.AdManage;
 
 
 import android.app.Activity;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
-import com.samyak2403.ghostdetecter.R;
+import com.arrowwould.ghostdetecter.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;

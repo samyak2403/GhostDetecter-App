@@ -1,4 +1,4 @@
-package com.samyak2403.ghostdetecter.screen.demo;
+package com.arrowwould.ghostdetecter.screen.demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -7,10 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+
+import com.arrowwould.AdManage.Control;
+import com.arrowwould.AdManage.Helper;
+import com.arrowwould.ghostdetecter.R;
 import com.arrowwould.ghostdetecter.databinding.ActivityDemoBinding;
-import com.samyak2403.AdManage.Control;
-import com.samyak2403.AdManage.Helper;
-import com.samyak2403.ghostdetecter.R;
 
 
 import java.util.Random;

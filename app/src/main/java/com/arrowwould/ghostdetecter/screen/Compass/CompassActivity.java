@@ -1,16 +1,17 @@
-package com.samyak2403.ghostdetecter.screen.Compass;
+package com.arrowwould.ghostdetecter.screen.Compass;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.arrowwould.ghostdetecter.databinding.ActivityCompassBinding;
-import com.samyak2403.AdManage.Control;
-import com.samyak2403.AdManage.Helper;
-import com.samyak2403.ghostdetecter.R;
 
-import com.samyak2403.ghostdetecter.screen.MainActivity;
+import com.arrowwould.ghostdetecter.databinding.ActivityCompassBinding;
+import com.arrowwould.AdManage.Control;
+import com.arrowwould.AdManage.Helper;
+import com.arrowwould.ghostdetecter.R;
+
+import com.arrowwould.ghostdetecter.screen.MainActivity;
 
 
 import android.content.Intent;

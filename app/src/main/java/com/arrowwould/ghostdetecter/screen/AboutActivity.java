@@ -1,4 +1,4 @@
-package com.samyak2403.ghostdetecter.screen;
+package com.arrowwould.ghostdetecter.screen;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 
-import com.samyak2403.AdManage.Control;
-import com.samyak2403.AdManage.Helper;
-import com.samyak2403.ghostdetecter.R;
+import com.arrowwould.AdManage.Control;
+import com.arrowwould.AdManage.Helper;
+import com.arrowwould.ghostdetecter.R;
 
 
 public class AboutActivity extends AppCompatActivity {

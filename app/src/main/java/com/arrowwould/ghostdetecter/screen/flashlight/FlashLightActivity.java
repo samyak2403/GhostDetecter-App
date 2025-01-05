@@ -1,4 +1,4 @@
-package com.samyak2403.ghostdetecter.screen.flashlight;
+package com.arrowwould.ghostdetecter.screen.flashlight;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,12 +11,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.arrowwould.ghostdetecter.databinding.ActivityFlashLightBinding;
-import com.samyak2403.AdManage.Control;
-import com.samyak2403.AdManage.Helper;
-import com.samyak2403.ghostdetecter.R;
 
-import com.samyak2403.ghostdetecter.screen.MainActivity;
+import com.arrowwould.ghostdetecter.databinding.ActivityFlashLightBinding;
+import com.arrowwould.AdManage.Control;
+import com.arrowwould.AdManage.Helper;
+import com.arrowwould.ghostdetecter.R;
+
+import com.arrowwould.ghostdetecter.screen.MainActivity;
 
 
 public class FlashLightActivity extends AppCompatActivity {
