@@ -11,7 +11,10 @@ import com.arrowwould.AdManage.Helper;
 import com.arrowwould.ghostdetecter.GhostDetectedActivity;
 import com.arrowwould.ghostdetecter.R;
 import com.arrowwould.ghostdetecter.databinding.ActivityMainBinding;
+import com.arrowwould.ghostdetecter.devloperProfile.DevloperProfileActivity;
+import com.arrowwould.ghostdetecter.screen.Compass.CompassActivity;
 import com.arrowwould.ghostdetecter.screen.demo.DemoActivity;
+import com.arrowwould.ghostdetecter.screen.flashlight.FlashLightActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         binding.magneticSensorBtn.setOnClickListener(this::onMagneticSensorButtonClick);
         binding.demoBtn.setOnClickListener(this::onDemoButtonClick);
         binding.aboutBtn.setOnClickListener(this::onAboutButtonClick);
+        binding.CompassBtn.setOnClickListener(this::CompassButtonClick);
+        binding.moreBtn.setOnClickListener(this::onMoreButton);
+        binding.devProfile.setOnClickListener(this::onDevloperProfile);
 
         //---- banner ads start ----//
         Control control = new Control(this);
@@ -46,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
         // Initialize Helper class for Ad Management
         adHelper = new Helper(this);
 
+
+    }
+
+    private void onDevloperProfile(View view) {
+
+        intent = new Intent(this, DevloperProfileActivity.class);
+        startActivity(intent);
+        finish();
 
     }
 
@@ -89,4 +103,24 @@ public class MainActivity extends AppCompatActivity {
         adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
 
     }
+
+    private void CompassButtonClick(View view) {
+
+        intent = new Intent(this, CompassActivity.class);
+        startActivity(intent);
+        adHelper.showCounterInterstitialAd(1); // Show ad every 5 clicks
+
+        finish();
+
+    }
+
+    private void onMoreButton(View view) {
+
+        intent = new Intent(this, FlashLightActivity.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+
 }

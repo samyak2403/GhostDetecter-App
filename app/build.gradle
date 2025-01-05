@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    id 'kotlin-kapt'
 }
 
 android {
@@ -8,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.arrowwould.ghostdetecter"
-        minSdk 23
+        minSdk 24 // fro need for ar to
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -26,9 +28,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
 
     buildFeatures{
         viewBinding =  true
+        dataBinding = true
     }
 }
 
@@ -45,4 +52,7 @@ dependencies {
     implementation 'com.github.anastr:speedviewlib:1.6.1'
 
     implementation("com.google.android.gms:play-services-ads:23.6.0")
+
+
+
 }
