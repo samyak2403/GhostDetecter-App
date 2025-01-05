@@ -1,4 +1,4 @@
-package com.arrowwould.ghostdetecter;
+package com.samyak2403.ghostdetecter;
 
 import org.junit.Test;
 

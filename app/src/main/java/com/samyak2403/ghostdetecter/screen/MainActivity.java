@@ -1,4 +1,4 @@
-package com.arrowwould.ghostdetecter.screen;
+package com.samyak2403.ghostdetecter.screen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,15 +6,16 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.arrowwould.AdManage.Control;
-import com.arrowwould.AdManage.Helper;
-import com.arrowwould.ghostdetecter.GhostDetectedActivity;
-import com.arrowwould.ghostdetecter.R;
 import com.arrowwould.ghostdetecter.databinding.ActivityMainBinding;
-import com.arrowwould.ghostdetecter.devloperProfile.DevloperProfileActivity;
-import com.arrowwould.ghostdetecter.screen.Compass.CompassActivity;
-import com.arrowwould.ghostdetecter.screen.demo.DemoActivity;
-import com.arrowwould.ghostdetecter.screen.flashlight.FlashLightActivity;
+import com.samyak2403.AdManage.Control;
+import com.samyak2403.AdManage.Helper;
+import com.samyak2403.ghostdetecter.GhostDetectedActivity;
+import com.samyak2403.ghostdetecter.R;
+
+import com.samyak2403.ghostdetecter.devloperProfile.DevloperProfileActivity;
+import com.samyak2403.ghostdetecter.screen.Compass.CompassActivity;
+import com.samyak2403.ghostdetecter.screen.demo.DemoActivity;
+import com.samyak2403.ghostdetecter.screen.flashlight.FlashLightActivity;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Ghost Detecter</string>
+    <string name="app_name">Ghost Detector</string>
     <string name="_100">100</string>
-    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="admob_banner_id">ca-app-pub-3940256099942544/9214589741</string>
-    <string name="open_ads">ca-app-pub-3940256099942544/9257395921</string>
+    <string name="admob_interstitial_id">ca-app-pub-6211293117600297/6220593338</string>
+    <string name="admob_banner_id">ca-app-pub-6211293117600297/3761950955</string>
+    <string name="open_ads">ca-app-pub-6211293117600297/7360648135</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="flashlight_toggle">Flashlight Toggle</string>

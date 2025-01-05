@@ -1,29 +1,21 @@
-package com.arrowwould.ghostdetecter.devloperProfile;
+package com.samyak2403.ghostdetecter.devloperProfile;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.arrowwould.AdManage.Control;
-import com.arrowwould.AdManage.Helper;
-import com.arrowwould.ghostdetecter.GhostDetectedActivity;
-import com.arrowwould.ghostdetecter.R;
 import com.arrowwould.ghostdetecter.databinding.ActivityDevloperProfileBinding;
-import com.arrowwould.ghostdetecter.screen.MainActivity;
+import com.samyak2403.AdManage.Control;
+import com.samyak2403.AdManage.Helper;
+import com.samyak2403.ghostdetecter.R;
+
+import com.samyak2403.ghostdetecter.screen.MainActivity;
 
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.view.MenuItem;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 
 
 public class DevloperProfileActivity extends AppCompatActivity {

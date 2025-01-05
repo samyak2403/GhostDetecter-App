@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.arrowwould.ghostdetecter'
+    namespace 'com.samyak2403.ghostdetecter'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.arrowwould.ghostdetecter"
+        applicationId "com.samyak2403.ghostdetecter"
         minSdk 24 // fro need for ar to
         targetSdk 34
         versionCode 1

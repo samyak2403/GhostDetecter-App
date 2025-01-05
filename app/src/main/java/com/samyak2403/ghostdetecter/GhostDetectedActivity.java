@@ -1,4 +1,4 @@
-package com.arrowwould.ghostdetecter;
+package com.samyak2403.ghostdetecter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,10 +16,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
-import com.arrowwould.AdManage.Control;
-import com.arrowwould.AdManage.Helper;
 import com.arrowwould.ghostdetecter.databinding.ActivityGhostDetectedBinding;
-import com.arrowwould.ghostdetecter.screen.MainActivity;
+import com.samyak2403.AdManage.Control;
+import com.samyak2403.AdManage.Helper;
+
+import com.samyak2403.ghostdetecter.screen.MainActivity;
 
 
 public class GhostDetectedActivity extends AppCompatActivity implements SensorEventListener {

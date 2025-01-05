@@ -1,4 +1,4 @@
-package com.arrowwould.ghostdetecter.screen;
+package com.samyak2403.ghostdetecter.screen;
 
 import android.content.Intent;
 import android.hardware.Sensor;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.arrowwould.AdManage.Control;
-import com.arrowwould.AdManage.Helper;
-import com.arrowwould.ghostdetecter.R;
+import com.samyak2403.AdManage.Control;
+import com.samyak2403.AdManage.Helper;
+import com.samyak2403.ghostdetecter.R;
 
 public class SensorCheckActivity extends AppCompatActivity {
 
